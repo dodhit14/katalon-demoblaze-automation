@@ -79,8 +79,12 @@ Planned enhancements include:
 - Custom Keywords
 - Test Listeners
 - Global Variables
-- Cross-Browser Testing
-- CI/CD Integration
+
+# Katalon Automation Practice - Demoblaze
+![Katalon](https://img.shields.io/badge/Katalon-11.1.3-brightgreen)
+![Automation](https://img.shields.io/badge/Test-Automation-blue)
+![Status](https://img.shields.io/badge/Learning-In%20Progress-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## Author
 
