@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Mendaftarkan pengguna yang usernamenya sudah terdaftar sebelumnay</description>
+   <name>register user where username is registered</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c1179c6-6fcd-4df8-9e79-69c0bfdba4f2</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,19 @@
+# Katalon
+bin/
+Libs/
+Reports/
+Temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.settings/
+.classpath
+
+# Logs
+*.log
+
+# Local configuration
+.settings
