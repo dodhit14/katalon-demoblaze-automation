@@ -15,7 +15,7 @@
       <guid>44179a52-458e-4fb8-ab73-f4bac50a2455</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Register/TC_Login</testCaseId>
+      <testCaseId>Test Cases/Authentification/TC_Login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>823f50ce-d47a-4bd4-8259-a46138909d22</id>

@@ -1,4 +1,4 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,30 +17,39 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'common.BrowserKeyword.openWebsite'()
 
-WebUI.navigateToUrl('https://www.demoblaze.com')
+//Form Login
+CustomKeywords.'common.AuthentificationKeyword.submitForm'(
 
-WebUI.click(findTestObject('Register/btn_SignUp_Menu'))
+	findTestObject('Login/btn_Login_Menu'),
+	
+	findTestObject('Login/form_Sigin'),
+	
+	findTestObject('Object Repository/Login/txt_Username'),
+	
+	findTestObject('Object Repository/Login/txt_Password'),
+	
+	findTestObject('Login/btn_Login'),
+	
+	username,
+	
+	password
+)
 
-WebUI.verifyElementVisible(findTestObject('Register/Form_SignUp'))
+// Verify Response
+if (resultType == 'SUCCESS') {
+    WebUI.verifyElementVisible(findTestObject('Login/btn_Welcome_User'))
 
-WebUI.setText(findTestObject('Register/txt_Username'), username)
+    String actualWelcome = WebUI.getText(
+		findTestObject('Login/btn_Welcome_User')
+	)
 
-WebUI.setText(findTestObject('Register/txt_Password'), password)
+    WebUI.verifyMatch(actualWelcome, expected, false)
+} else {
+	
+    	CustomKeywords.'common.AlertKeyword.verifyBrowserAlert'(expected)
+}
 
-//println("Username = " + username)
-//println("Password = " + password)
-
-WebUI.click(findTestObject('Register/btn_SigUp'))
-
-WebUI.waitForAlert(10)
-
-String actualAlert = WebUI.getAlertText()
-
-WebUI.verifyMatch(actualAlert, expectedAlert, false)
-
-WebUI.acceptAlert()
-
-WebUI.closeBrowser()
+CustomKeywords.'common.BrowserKeyword.closeWebsite'()
 

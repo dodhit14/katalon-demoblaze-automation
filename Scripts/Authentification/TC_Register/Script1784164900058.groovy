@@ -17,41 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'common.BrowserKeyword.openWebsite'()
 
-WebUI.navigateToUrl('https://www.demoblaze.com')
+CustomKeywords.'common.AuthentificationKeyword.submitForm'(
+	findTestObject('Register/btn_SignUp_Menu'),
 
-WebUI.click(findTestObject('Login/btn_Login_Menu'))
+	findTestObject('Register/Form_SignUp'),
 
-WebUI.verifyElementVisible(findTestObject('Login/form_Sigin'))
+	findTestObject('Register/txt_Username'),
 
-WebUI.setText(findTestObject('Object Repository/Login/txt_Username'), username)
+	findTestObject('Register/txt_Password'),
 
-WebUI.setText(findTestObject('Object Repository/Login/txt_Password'), password)
-
-println('Username = ' + username)
-
-println('Password = ' + password)
-
-WebUI.click(findTestObject('Login/btn_Login'))
-
-if (resultType == 'SUCCESS') {
-    WebUI.verifyElementVisible(findTestObject('Login/btn_Welcome_User'))
-
-    String actualWelcome = WebUI.getText(
-		findTestObject('Login/btn_Welcome_User')
-	)
-
-    WebUI.verifyMatch(actualWelcome, expected, false)
-} else {
-	WebUI.waitForAlert(10)
+	findTestObject('Register/btn_SigUp'),
 	
-    String actualAlert = WebUI.getAlertText()
+	username,
+	
+	password
+)
 
-    WebUI.verifyMatch(actualAlert, expected, false)
+CustomKeywords.'common.AlertKeyword.verifyBrowserAlert'(expectedAlert)
 
-    WebUI.acceptAlert()
-}
-
-WebUI.closeBrowser()
+CustomKeywords.'common.BrowserKeyword.closeWebsite'()
 

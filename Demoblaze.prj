@@ -11,7 +11,7 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>11.1.3</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\lapto\Katalon Studio\Demoblaze\Demoblaze.prj</projectFileLocation>
+   <projectFileLocation>\\wsl.localhost\Ubuntu\home\adhit\workspace\learning\katalon-project-automation\katalon-demoblaze-automation\Demoblaze.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

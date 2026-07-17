@@ -9,7 +9,7 @@
    <dataFileGUID>b2bbafcd-977b-47ba-8f76-916483a0f90a</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin01 password Wrong+password. ALERT</data>
+   <data>admin password Wrong+password. ALERT</data>
    <data>null password Please+fill+out+Username+and+Password. ALERT</data>
    <data>mimin null Please+fill+out+Username+and+Password. ALERT</data>
    <data>hybs 123456 Welcome+hybs SUCCESS</data>
