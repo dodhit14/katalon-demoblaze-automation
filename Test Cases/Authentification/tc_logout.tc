@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Login_After_Logout</name>
+   <name>tc_logout</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>3b7457a4-16e8-43e4-b031-e3eece8c6c1b</testCaseGuid>
+   <testCaseGuid>c0e11ef5-0a24-4abf-a41e-bad25547df1e</testCaseGuid>
 </TestCaseEntity>

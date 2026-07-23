@@ -19,20 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'common.BrowserKeyword.openWebsite'()
 
-CustomKeywords.'common.AuthentificationKeyword.submitForm'(
-	findTestObject('Register/btn_SignUp_Menu'),
-
-	findTestObject('Register/Form_SignUp'),
-
-	findTestObject('Register/txt_Username'),
-
-	findTestObject('Register/txt_Password'),
-
-	findTestObject('Register/btn_SigUp'),
-	
-	username,
-	
-	password
+CustomKeywords.'common.AuthentificationKeyword.registerForm'(
+	username, password
 )
 
 CustomKeywords.'common.AlertKeyword.verifyBrowserAlert'(expectedAlert)

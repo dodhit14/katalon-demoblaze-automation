@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_Login</name>
+   <name>ts_login</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -12,13 +12,13 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>fc1dca0e-17ce-4e42-a1b4-57650618d867</testSuiteGuid>
    <testCaseLink>
-      <guid>44179a52-458e-4fb8-ab73-f4bac50a2455</guid>
+      <guid>ee441205-1fbc-4631-9e44-8b1862de5cc0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Authentification/TC_Login</testCaseId>
+      <testCaseId>Test Cases/Authentification/tc_login_validation</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>823f50ce-d47a-4bd4-8259-a46138909d22</id>
+         <id>7e4bd6f6-43a6-4eb5-b5fb-5cefe600b028</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -27,28 +27,28 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>823f50ce-d47a-4bd4-8259-a46138909d22</testDataLinkId>
+         <testDataLinkId>7e4bd6f6-43a6-4eb5-b5fb-5cefe600b028</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>username</value>
          <variableId>ecc5c389-4b93-4093-8ccf-b89b40cad3cb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>823f50ce-d47a-4bd4-8259-a46138909d22</testDataLinkId>
+         <testDataLinkId>7e4bd6f6-43a6-4eb5-b5fb-5cefe600b028</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>password</value>
          <variableId>2e929b1a-7e1c-4448-98e0-f08260e69afb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>823f50ce-d47a-4bd4-8259-a46138909d22</testDataLinkId>
+         <testDataLinkId>7e4bd6f6-43a6-4eb5-b5fb-5cefe600b028</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>expected</value>
          <variableId>e368d6c7-f3c1-4263-9ed3-aeb7e934fdaa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>823f50ce-d47a-4bd4-8259-a46138909d22</testDataLinkId>
+         <testDataLinkId>7e4bd6f6-43a6-4eb5-b5fb-5cefe600b028</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>resultType</value>
-         <variableId>f0356553-1bef-40ae-bf3d-2cf7794d3089</variableId>
+         <variableId>98098a1c-6e9b-4a36-b4ec-d446282fd1ba</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

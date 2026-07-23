@@ -41,6 +41,49 @@ public class AuthentificationKeyword {
 		WebUI.setText(passwordField, password)
 		
 		WebUI.click(submitButton)
+	};
+	
+	@Keyword
+	def loginForm(
+		String username,
+		String password
+	) {
+		submitForm(
+			findTestObject('Login/btn_Login_Menu'),
+			
+			findTestObject('Login/form_Sigin'),
+			
+			findTestObject('Object Repository/Login/txt_Username'),
+			
+			findTestObject('Object Repository/Login/txt_Password'),
+			
+			findTestObject('Login/btn_Login'),
+			
+			username,
+			
+			password
+		)		
 	}
+	
+	@Keyword 
+	def registerForm(
+		String username,
+		String password
+	) {
+		submitForm(
+			findTestObject('Register/btn_SignUp_Menu'),
 
+			findTestObject('Register/Form_SignUp'),
+		
+			findTestObject('Register/txt_Username'),
+		
+			findTestObject('Register/txt_Password'),
+		
+			findTestObject('Register/btn_SigUp'),
+			
+			username,
+			
+			password
+		)
+	}
 }

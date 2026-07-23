@@ -19,21 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'common.BrowserKeyword.openWebsite'()
 
-CustomKeywords.'common.AuthentificationKeyword.submitForm'(
-
-	findTestObject('Login/btn_Login_Menu'),
-	
-	findTestObject('Login/form_Sigin'),
-	
-	findTestObject('Object Repository/Login/txt_Username'),
-	
-	findTestObject('Object Repository/Login/txt_Password'),
-	
-	findTestObject('Login/btn_Login'),
-	
-	'907802',
-	
-	'password'
+CustomKeywords.'common.AuthentificationKeyword.loginForm'(
+	'907802', 'password'
 )
 
 WebUI.verifyElementVisible(findTestObject('Login/btn_Welcome_User'))

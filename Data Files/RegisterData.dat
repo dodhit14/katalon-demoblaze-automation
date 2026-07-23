@@ -9,25 +9,30 @@
    <dataFileGUID>edcb9720-0f7a-4c5a-85b8-4f748cb051e4</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>admin01 password This+user+already+exist.</data>
-   <data>null password Please+fill+out+Username+and+Password.</data>
-   <data>hybs null Please+fill+out+Username+and+Password.</data>
-   <data>moving01 password Sign+up+successful.</data>
-   <data>907802 password Sign+up+successful.</data>
-   <data>mommy05%40mail.com password Sign+up+successful.</data>
-   <data>symbol3%40%21%23*%26%2B pass Sign+up+successful.</data>
+   <data>Existing+user admin01 password This+user+already+exist.</data>
+   <data>Empty+username null password Please+fill+out+Username+and+Password.</data>
+   <data>Empty+password hybs null Please+fill+out+Username+and+Password.</data>
+   <data>Register+success+with+username+is+combine+string+and+number moving03 password Sign+up+successful.</data>
+   <data>Register+success+with+username+is+only+number 9078022 password Sign+up+successful.</data>
+   <data>Register+success+with+mail monday02%40mail.com password Sign+up+successful.</data>
+   <data>Register+succes+with+username+contain+symbol symbol40%40%21%23*%26%2B pass Sign+up+successful.</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>username</name>
+      <name>testCase</name>
       <size>7</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
-      <name>password</name>
+      <name>username</name>
       <size>7</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
+      <name>password</name>
+      <size>7</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
       <name>expectedAlert</name>
       <size>7</size>
    </internalDataColumns>

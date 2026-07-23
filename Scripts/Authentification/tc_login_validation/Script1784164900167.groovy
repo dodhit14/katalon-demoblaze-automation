@@ -1,4 +1,4 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -16,4 +16,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+
+CustomKeywords.'common.BrowserKeyword.openWebsite'()
+
+//Form Login
+CustomKeywords.'common.AuthentificationKeyword.loginForm'(
+	username, password
+)
+
+// Verify Response
+if (resultType == 'SUCCESS') {
+    WebUI.verifyElementVisible(findTestObject('Login/btn_Welcome_User'))
+
+    String actualWelcome = WebUI.getText(
+		findTestObject('Login/btn_Welcome_User')
+	)
+
+    WebUI.verifyMatch(actualWelcome, expected, false)
+} else {
+	
+    	CustomKeywords.'common.AlertKeyword.verifyBrowserAlert'(expected)
+}
+
+CustomKeywords.'common.BrowserKeyword.closeWebsite'()
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Login</name>
+   <name>tc_login_validation</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
@@ -28,7 +28,7 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f0356553-1bef-40ae-bf3d-2cf7794d3089</variableId>
+      <variableId>98098a1c-6e9b-4a36-b4ec-d446282fd1ba</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -54,7 +54,7 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f0356553-1bef-40ae-bf3d-2cf7794d3089</id>
+      <id>98098a1c-6e9b-4a36-b4ec-d446282fd1ba</id>
       <masked>false</masked>
       <name>resultType</name>
    </variable>
